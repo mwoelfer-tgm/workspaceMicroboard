@@ -1,0 +1,6 @@
+11:17:25 **** Incremental Build of configuration Debug for project static_libary ****
+make all 
+make: Nothing to be done for `all'.
+
+11:17:26 Build Finished (took 131ms)
+

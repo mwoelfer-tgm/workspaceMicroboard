@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;file.h&apos; to &apos;inc&apos;" description="Move &apos;file.h&apos; to &apos;inc&apos;" destination="inc" element1="src/file.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1487851570418" updateReferences="true"/>
+</session>

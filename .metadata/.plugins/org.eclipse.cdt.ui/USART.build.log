@@ -1,0 +1,23 @@
+13:20:59 **** Incremental Build of configuration Debug for project USART ****
+make all 
+'Building file: ../src/stm32f3xx_it.c'
+'Invoking: MCU GCC Compiler'
+F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\USART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -DSTM32F30 -DSTM32F3DISCOVERY -DSTM32F3 -DSTM32F303VCTx -DSTM32 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/STM32F3-Discovery" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/lsm303dlhc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/l3gd20" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/Common" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc/Legacy" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/device" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/core" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/USART/inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/core" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/device" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc/Legacy" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/Common" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/l3gd20" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/lsm303dlhc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/STM32F3-Discovery" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32f3xx_it.d" -MT"src/stm32f3xx_it.o" -o "src/stm32f3xx_it.o" "../src/stm32f3xx_it.c"
+'Finished building: ../src/stm32f3xx_it.c'
+' '
+'Building target: USART.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -L"F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\stm32f3discovery_hal_lib\Debug" -T"F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\USART\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "USART.elf" @"objects.list"  -lstm32f3discovery_hal_lib
+'Finished building target: USART.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "USART.elf" "USART.bin"
+arm-none-eabi-size "USART.elf"
+   text	   data	    bss	    dec	    hex	filename
+  27892	   2232	   1748	  31872	   7c80	USART.elf
+' '
+
+13:21:00 Build Finished (took 898ms)
+

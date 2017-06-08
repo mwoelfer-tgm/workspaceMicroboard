@@ -1,0 +1,17 @@
+10:15:48 **** Incremental Build of configuration Debug for project adc ****
+make all 
+'Building target: adc.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -L"F:\Users\Bernd\Onedrive\Schule\Jahrgang_4\SYT\workspace\static_libary\Debug" -L"F:\Users\Bernd\Onedrive\Schule\Jahrgang_4\SYT\workspace\stm32f3discovery_hal_lib\Debug" -T"F:\Users\Bernd\Onedrive\Schule\Jahrgang_4\SYT\workspace\adc\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "adc.elf" @"objects.list"  -lstatic_libary -lstm32f3discovery_hal_lib -u HAL_ADCEx_InjectedStart
+'Finished building target: adc.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "adc.elf" "adc.bin"
+arm-none-eabi-size "adc.elf"
+   text	   data	    bss	    dec	    hex	filename
+  31420	   2264	   1724	  35408	   8a50	adc.elf
+' '
+
+10:15:49 Build Finished (took 538ms)
+

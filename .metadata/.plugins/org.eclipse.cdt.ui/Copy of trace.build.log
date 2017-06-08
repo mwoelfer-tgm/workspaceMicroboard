@@ -1,0 +1,53 @@
+08:54:33 **** Incremental Build of configuration Debug for project Copy of trace ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MCU GCC Compiler'
+F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\Copy of trace\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -DSTM32F30 -DSTM32F3DISCOVERY -DSTM32F3 -DSTM32F303VCTx -DSTM32 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/Copy of trace/inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/core" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/device" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc/Legacy" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/Common" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/l3gd20" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/lsm303dlhc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/STM32F3-Discovery" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:22:1: warning: implicit declaration of function 'set_conf' [-Wimplicit-function-declaration]
+ set_conf();
+ ^
+../src/main.c:23:1: warning: implicit declaration of function 'InitButton' [-Wimplicit-function-declaration]
+ InitButton();
+ ^
+../src/main.c: At top level:
+../src/main.c:26:6: warning: conflicting types for 'set_conf'
+ void set_conf(void){
+      ^
+../src/main.c:22:1: note: previous implicit declaration of 'set_conf' was here
+ set_conf();
+ ^
+../src/main.c:44:6: warning: conflicting types for 'InitButton'
+ void InitButton(void){
+      ^
+../src/main.c:23:1: note: previous implicit declaration of 'InitButton' was here
+ InitButton();
+ ^
+../src/main.c: In function 'HAL_GPIO_EXTI_Callback':
+../src/main.c:64:20: warning: unused variable 'f' [-Wunused-variable]
+ unsigned long long f = faktor;
+                    ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/stm32f3xx_it.c'
+'Invoking: MCU GCC Compiler'
+F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\Copy of trace\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -DSTM32F30 -DSTM32F3DISCOVERY -DSTM32F3 -DSTM32F303VCTx -DSTM32 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F303xC -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/Copy of trace/inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/core" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/CMSIS/device" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc/Legacy" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/HAL_Driver/Inc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/Common" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/l3gd20" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/Components/lsm303dlhc" -I"F:/Users/Bernd/Onedrive/Schule/4. Jahrgang/SYT/workspace/stm32f3discovery_hal_lib/Utilities/STM32F3-Discovery" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/stm32f3xx_it.d" -MT"src/stm32f3xx_it.o" -o "src/stm32f3xx_it.o" "../src/stm32f3xx_it.c"
+'Finished building: ../src/stm32f3xx_it.c'
+' '
+'Building target: Copy of trace.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -L"F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\stm32f3discovery_hal_lib\Debug" -T"F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\Copy of trace\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Copy of trace.elf" @"objects.list"  -lstm32f3discovery_hal_lib
+'Finished building target: Copy of trace.elf'
+' '
+make --no-print-directory post-build
+'Generating binary and Printing size information:'
+arm-none-eabi-objcopy -O binary "Copy of trace.elf" "Copy of trace.bin"
+arm-none-eabi-size "Copy of trace.elf"
+   text	   data	    bss	    dec	    hex	filename
+  26076	   2224	   1660	  29960	   7508	Copy of trace.elf
+' '
+
+08:54:34 Build Finished (took 1s.736ms)
+

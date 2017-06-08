@@ -1,0 +1,12 @@
+10:30:26 **** Incremental Build of configuration Debug for project redLight1 ****
+make all 
+'Building target: redLight1.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -T"F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\redLight1\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "redLight1.elf" @"objects.list"  
+startup/startup_stm32.o: In function `LoopFillZerobss':
+F:\Users\Bernd\Onedrive\Schule\4. Jahrgang\SYT\workspace\redLight1\Debug/../startup/startup_stm32.s:78: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [redLight1.elf] Error 1
+
+10:30:26 Build Finished (took 344ms)
+
